@@ -1,0 +1,38 @@
+body {
+  margin: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.avatar {
+  width: 150px;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #4a4e69;
+  border-bottom: 6px solid #22223b;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px #000000;
+  animation: textColorChange 2s infinite;
+}
+
+.avatar:hover {
+  width: 180px;
+}
+
+@keyframes textColorChange {
+  0% {
+    color: #f2e9e4;
+  }
+  50% {
+    color: #333;
+  }
+  100% {
+    color: #f2e9e4;
+  }
+}
