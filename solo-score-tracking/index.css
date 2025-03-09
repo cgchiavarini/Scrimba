@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Cursed:Timer";
+    src: url("CursedTimer.ttf");
+}
+  
+body {
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background: orangered;
+    padding: 40px;
+}
+
+.columns-wrapper {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%; 
+}
+
+.column {
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 120px;
+    background: black;
+    border-radius: 5px;
+    color: #F94F6D;
+    font-family: 'Cursed:Timer';
+    font-size: 90px;
+}
+
+.buttons {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn1, .btn2, .btn3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-family: 'Cursed:Timer';
+    
+}
+
+.reset {
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: 'Cursed:Timer';
+    font-size: 24px;
+}
+
