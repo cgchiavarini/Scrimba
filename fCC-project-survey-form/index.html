@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          First project on the Responsive Web Design curriculum at
+          freeCodeCamp.org
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-item">
+          <label id="name-label" for="name">Name</label>
+          <input
+            class="stretch"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label id="email-label" for="email">Email</label>
+          <input
+            class="stretch"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label id="number-label" for="number">Age</label>
+          <input
+            class="stretch"
+            type="number"
+            id="number"
+            name="age"
+            placeholder="Age"
+            min="13"
+            max="99"
+          />
+        </div>
+        <div class="form-item">
+          <label for="dropdown">Dropdown</label>
+          <select id="dropdown" name="dropdown" required>
+            <option disabled selected value>Select option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <p>Radio Options</p>
+
+          <label
+            ><input type="radio" name="radio" value="option1" /> Option 1</label
+          >
+          <label
+            ><input type="radio" name="radio" value="option2" /> Option 2</label
+          >
+          <label
+            ><input type="radio" name="radio" value="option3" /> Option 3</label
+          >
+        </div>
+        <div class="form-item">
+          <p>Checkbox Options</p>
+          <label>
+            <input type="checkbox" name="checkbox" value="option1" /> Option 1
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox" value="option 2" /> Option 2
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox" value="option3" /> Option 3
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox" value="option4" /> Option 4
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox" value="option5" /> Option 5
+          </label>
+        </div>
+        <div class="form-item">
+          <label for="comments">Comment box</label>
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Write your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-item">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
