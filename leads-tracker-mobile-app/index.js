@@ -1,3 +1,12 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js";
+
+const firebaseConfig = {
+  databaseURL: "https://leads-tracker-app-e9370-default-rtdb.firebaseio.com/",
+};
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
 let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
@@ -5,6 +14,8 @@ const ulEl = document.getElementById("ul-el");
 const deleteBtn = document.getElementById("delete-btn");
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 const tabBtn = document.getElementById("tab-btn");
+
+console.log(database);
 
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
